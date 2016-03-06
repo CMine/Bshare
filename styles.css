@@ -1,0 +1,153 @@
+
+body{
+	margin: 0;
+}
+
+a img{
+	boarder: 0px;
+}
+
+
+::-moz-selection {
+  background-color: #6ab344;
+  color: #fff;
+}
+
+::selection {
+  background-color: #6ab344;
+  color: #fff;
+}
+
+.bscore-mobile-title {
+  display: none !important;
+}
+
+/* Site Header && Navigation */
+.bscore-header  .mdl-menu__container{
+	z-index: 50;
+	margin: 0; 
+}
+
+.bscore-header{
+	overflow: visible;
+	background-color: black;
+}
+
+.bscore-header .material-icons{
+	color: #767777 
+}
+
+.bscore-header .mdl-navigation__link{
+	color: #FFF;
+	font-weight: 700;
+	font-size: 14px;
+}
+
+.bscore-nav-container {
+    direction: rtl;
+    order: 1;
+    width: 500px;
+    transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+        width 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+.bscore-nav {
+    direction: ltr;
+    justify-content: flex-end;
+    width: 800px;
+  }
+
+  .bscore-nav .mdl-navigation__link {
+    display: inline-block;
+    height: 60px;
+    line-height: 68px;
+    background-color: transparent !important;
+    border-bottom: 4px solid transparent;
+  }
+.bscore-nav-container .mdl-navigation__link:hover{
+	border-bottom: 4px solid #FFC200;
+}
+
+/* Logo */
+
+.logo-image {
+  height: 28px;
+  width: 140px;
+}
+
+.logo-font {
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  line-height: 1;
+  color: #FFFF;
+  text-align: center;
+  font-weight: 500;
+}
+
+/* Site Content - Splash Page */
+
+.tagline-section {
+  position: relative;
+  height: 800px;
+  width: auto;
+  background-color: #f3f3f3;
+  background: url('images/test3.jpg') center no-repeat;
+  background-size: cover;
+}
+
+.slogan {
+  font-size: 60px;
+  padding-top: 220px;
+}
+
+.sub-slogan {
+  font-size: 21px;
+  padding-top: 24px;
+}
+
+  /* Card (About Us) */
+
+.card-container {
+}
+
+  .card-container .mdl-card__media {
+    overflow: hidden;
+    background: transparent;
+  }
+
+    .card-container .mdl-card__media img {
+      width: 100%;
+    }
+
+  .card-container .mdl-card__title {
+    background: transparent;
+    height: auto;
+  }
+
+  .card-container .mdl-card__title-text {
+    color: black;
+    height: auto;
+  }
+
+  .card-container .mdl-card__supporting-text {
+    height: auto;
+    color: black;
+    padding-bottom: 56px;
+  }
+
+/* Mobile layout */
+@media (max-width: 900px) {
+  .bscore-nav-container{
+    display: none;
+  }
+
+  .bscore-title {
+    display: none !important;
+  }
+
+  .bscore-mobile-title {
+    display: block !important;
+    position: absolute;
+    left: calc(50% - 70px);
+    top: 12px;
+    transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  }
