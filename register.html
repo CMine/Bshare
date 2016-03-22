@@ -16,7 +16,7 @@
 
 	    <style>
 			.card-wide.mdl-card {
-			  width: 800px;
+			  width: auto;
 			}
 			.card-wide > .mdl-card__title {
 			  color: #fff;
@@ -25,6 +25,16 @@
 			}
 			.card-wide > .mdl-card__menu {
 			  color: #fff;
+			}
+
+			.mdl-textfield--file {
+  				.mdl-textfield__input {
+    			box-sizing: border-box;
+    			width: calc(100% - 32px);
+  			}
+  			.mdl-button--file {
+    			right: 100px;
+  				}
 			}
 		</style>
 
@@ -58,6 +68,7 @@
 		</div>
 
 	<div class="mdl-layout mdl-js-layout mdl-color--grey-100">
+
 		<div class="card-wide mdl-card mdl-shadow--4dp">
 			<!-- Form Title (Helps is accessability reading) -->
   			<div class="mdl-card__title">
@@ -67,14 +78,33 @@
   			<div class="mdl-card__supporting-text">
   				<form action = "#">
 					<div class = "mdl-textfield mdl-js-textfield">
-						<i class="mdl-icon-person"></i>
-						<input class = "mdl-textfield__input" type = "text" id = "poc_first" />
+						<input class = "mdl-textfield__input " type = "text" id = "poc_first" pattern="[A-Z,a-z, ]*" />
 						<label class = "mdl-textfield__label" for = "poc_first">First Name</label>
+						<span class="mdl-textfield__error">Letters and spaces only</span>
 					</div>
 					<div class = "mdl-textfield mdl-js-textfield">
-						<input class = "mdl-textfield__input" type = "text" id = "poc_last" />
+						<input class = "mdl-textfield__input" type = "text" id = "poc_last" pattern="[A-Z,a-z, ]*" />
 						<label class = "mdl-textfield__label" for = "poc_last">Last Name</label>
+						<span class="mdl-textfield__error">Letters and spaces only</span>
 					</div>
+					<div class = "mdl-textfield mdl-js-textfield">
+						<input class = "mdl-textfield__input" type = "text" id = "bus_name" />
+						<label class = "mdl-textfield__label" for = "poc_last">Business Name</label>
+					</div>
+					<div class = "mdl-textfield mdl-js-textfield">
+						<input class = "mdl-textfield__input" type = "text" id = "wallet_address" />
+						<label class = "mdl-textfield__label" for = "poc_last">Wallet Address</label>
+					</div>
+					<div class="mdl-textfield mdl-js-textfield mdl-textfield--file">
+    					<input class="mdl-textfield__input" type="text" id="upload" readonly/>
+    					<label class = "mdl-textfield__label" for = "poc_last">Upload Verfication
+    						<!-- Upload Paperclip Button -->
+    						<div class="mdl-button mdl-button--primary mdl-button--icon mdl-button--file">
+      							<i class="material-icons">attach_file</i> <!-- <input type="file" id="uploadBtn"> -->
+    						</div>
+    					</label>
+  					</div>
+
 				</form>
   			</div>
   			<!-- Submission Button -->
