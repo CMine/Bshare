@@ -1,0 +1,96 @@
+<! doctype html >
+<html lang = "en">
+	<head>
+		<!-- Material Design Lite Stylesheets-->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">		
+		<link rel="stylesheet" href="./material.min.css">
+		<link rel="stylesheet" href="styles.css">
+		
+		<!-- Compatibility -->
+		<meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <meta name="BScore" >
+	    <title>BScore</title>
+
+	    <style>
+			.card-wide.mdl-card {
+			  width: 800px;
+			}
+			.card-wide > .mdl-card__title {
+			  color: #fff;
+			  height: 250px;
+			  background: url("images/temp1.jpg") center / cover ;
+			}
+			.card-wide > .mdl-card__menu {
+			  color: #fff;
+			}
+		</style>
+
+	</head>
+
+	<body>
+		<div class = "mdl-layout mdl-js-layout mdl-layout--fixed-header">
+			<div class = "bscore-header mdl-layout__header mdl-layout__header--waterfall">
+				<div class = "mdl-layout__header-row">
+					<!-- Site Title -->
+					<span class = "bscore-title mdl-layout-title">
+						<img class = "logo-image" src="images/test.png" alt="logo">
+					</span>
+					<!-- Navigation Alignment to Right -->
+					<div class = "bscore-header-spacer mdl-layout-spacer"></div>
+					<!-- Navigation -->
+					<div class="bscore-nav-container">
+						<nav class = "bscore-nav mdl-navigation">
+							<a class = "mdl-navigation__link mdl-typography--text-uppercase" href="index.html">About</a>
+							<a class = "mdl-navigation__link mdl-typography--text-uppercase" href="register.html">Register</a>
+							<a class = "mdl-navigation__link mdl-typography--text-uppercase" href="">Contact</a>
+						</nav>
+					</div>
+					<!-- Mobile Site Title -->
+					<span class="bscore-mobile-title mdl-layout-title">
+            			<img class="logo-image" src="images/test.png">
+          			</span>
+
+				</div>
+			</div>
+		</div>
+
+	<div class="mdl-layout mdl-js-layout mdl-color--grey-100">
+		<div class="card-wide mdl-card mdl-shadow--4dp">
+			<!-- Form Title (Helps is accessability reading) -->
+  			<div class="mdl-card__title">
+    			<h2 class="mdl-card__title-text">Register</h2>
+  			</div>
+  			<!-- The Textfield Form Placed On The Card -->
+  			<div class="mdl-card__supporting-text">
+  				<form action = "#">
+					<div class = "mdl-textfield mdl-js-textfield">
+						<i class="mdl-icon-person"></i>
+						<input class = "mdl-textfield__input" type = "text" id = "poc_first" />
+						<label class = "mdl-textfield__label" for = "poc_first">First Name</label>
+					</div>
+					<div class = "mdl-textfield mdl-js-textfield">
+						<input class = "mdl-textfield__input" type = "text" id = "poc_last" />
+						<label class = "mdl-textfield__label" for = "poc_last">Last Name</label>
+					</div>
+				</form>
+  			</div>
+  			<!-- Submission Button -->
+  			<div class="mdl-card__actions mdl-card--border">
+    			<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+    				Submit
+    			</a>
+  			</div>
+  			<div class="mdl-card__menu">
+  			<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+      		<i class="material-icons">share</i>
+    		</button>
+			</div>
+	</div>
+
+
+		<script src="./material.min.js"></script>
+	</body>
+</html>
