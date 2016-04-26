@@ -1,6 +1,12 @@
 import blockcypher
 import pprint
 
+#variables
+util_addresses = [["1C7qocA1rwv8Naj42hnMTW7uaiEN8cW6bJ"], ["1879fEfLY3vbtqv8uMAZb8ycofxc6o3evp"], ['14qHQKn5wyFY4vv5oHvJEtZ48na6Pqxmgn']]
+income_addresses = ["19HsbkwHRtjWpzCvXzQDL7eJRVxfg9WCz8"]
+work_income = 0
+util_spent = 0
+
 
 #functions
 def convert_to_btc(satoshis):
@@ -11,7 +17,7 @@ def balance(walletaddress):
     '''returns the wallet's balance in btcs'''
     satoshis_val = blockcypher.get_total_balance(walletaddress)
     balance = convert_to_btc(satoshis_val)
-    return balance 
+    return balance
 
 def overview(walletaddress):
     '''gets the general overview of the wallet while also setting the
@@ -22,6 +28,11 @@ def overview(walletaddress):
     total_received = convert_to_btc(x.get("total_received"))
     total_sent = convert_to_btc(x.get("total_sent"))
     return x
+
+def increase_ult(value):
+    '''increases the amount of btc spend on utilities'''
+    global util_spent
+    util_spent += convert_to_btc(value)
 
 def transations(walletaddress):
     fullchain = blockcypher.get_address_full(address = walletaddress)
