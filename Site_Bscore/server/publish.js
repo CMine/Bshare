@@ -9,5 +9,9 @@ Meteor.publish('allUsers', function(){
 });
 
 Meteor.publish('Accounts', function(){
-	return Meteor.users.find({});
+	return Meteor.Accounts.find({});
+});
+
+Meteor.publish('wallet', function(){
+	return Wallet.find({});
 });

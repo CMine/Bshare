@@ -9,5 +9,8 @@ Meteor.methods({
 	},
 	toggleReset(id){
 		Accounts.sendResetPasswordEmail(id);
-	}
+	},
+	addWallet: function( wallet ) {
+    check( wallet, Wallet.simpleSchema() );
+  }
 });
