@@ -1,0 +1,18 @@
+<!-- 
+Description: Creates the layout pattern of the entire application, which should include the header that controls naviagation and if the user has admin proviledges shows them the side naviagation. Templates are dynamically loaded depending on the given page.
+
+Requires: none
+Param: none
+Returns: page of the given route (i.e. /admin/user)
+ !-->
+
+
+<template name="AppLayout">
+    {{> Header}}
+    {{#if isInRole 'admin'}}
+    	{{> AppNav}}
+    {{/if}}
+    <main class="app-layout">
+        {{> Template.dynamic template=main}}
+    </main>
+</template>

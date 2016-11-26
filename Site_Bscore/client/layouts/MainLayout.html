@@ -1,0 +1,13 @@
+<!-- 
+Description: Creates the layout pattern of the main layout, which should include the header that controls naviagation and dynamically loads the given pages.
+
+Requires: none
+Param: none
+Returns: page of the given route (i.e. /admin/user)
+ !-->
+<template name="MainLayout">
+    {{> Header}}
+    <main class="main-layout">
+        {{> Template.dynamic template=main}}
+    </main>
+</template>

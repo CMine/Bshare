@@ -1,0 +1,13 @@
+<!--
+Description: Organizes the dashboard based on admin priviledges and
+displays the visual board reports.
+!-->
+<template name="Dashboard">
+    <!-- If the current users had admin priviledges show all reports -->
+	{{#if isInRole 'admin'}}
+    	<h1 class="page-title">Dashboard</h1>
+    <!-- If current user is not an admin show select number of reports-->
+    {{else}}
+    	<h1>Not Authorized</h1>
+    {{/if}}
+</template>

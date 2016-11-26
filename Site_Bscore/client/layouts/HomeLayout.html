@@ -1,0 +1,14 @@
+<!-- 
+Description: Creates the layout pattern of the home page, which should include the header that controls naviagation and dynamically loads the page layout (billboard, buttons, etc).
+
+Requires: none
+Param: none
+Returns: page of the given route (i.e. /admin/user)
+ !-->
+
+<template name="HomeLayout">
+    {{> Header}}
+    <main class="main-layout">
+        {{> Template.dynamic template=main}}
+    </main>
+</template>
