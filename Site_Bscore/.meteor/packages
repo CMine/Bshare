@@ -42,3 +42,7 @@ check
 fullcalendar:fullcalendar
 momentjs:moment
 rzymek:fullcalendar
+twbs:bootstrap
+semantic:ui-card
+semantic:ui-button
+semantic:ui-icon
