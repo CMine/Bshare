@@ -1,12 +1,8 @@
 Wallet = new Meteor.Collection('wallet');
 Wallet.allow({
   insert() {
-    if ( Meteor.user() ) {
-          return true;
-        }
-    else {
-          return false;
-        }
+    if ( Meteor.user() ) {return true;}
+    else {return false;}
     },
   update() { return false; },
   remove() { return false; }
@@ -21,6 +17,10 @@ WalletSchema = new SimpleSchema({
   "total_received": {
     type: Number,
     label: "Total Recieved"
+  },
+  "total_sent": {
+    type: Number,
+    label: "Total Sent"
   },
   "balance": {
     type: Number,

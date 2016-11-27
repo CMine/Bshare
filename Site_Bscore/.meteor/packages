@@ -46,3 +46,4 @@ twbs:bootstrap
 semantic:ui-card
 semantic:ui-button
 semantic:ui-icon
+semantic:ui-grid
