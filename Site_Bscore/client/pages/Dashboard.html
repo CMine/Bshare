@@ -6,25 +6,33 @@ displays the visual board reports.
     <!-- If the current users had admin priviledges show all reports -->
 	{{#if isInRole 'admin'}}
     	<h1 class="page-title">Dashboard</h1>
-			<div class="ui cards">
-					<div class="card">
-						<div class="content">
-								Account Balance
-							<div class="meta">
-							</div>
-							<div class="description">
-								Current Balance is {{wallet.balance}} btc
-							</div>
-						</div>
-						<div class="extra content">
-							<div class="ui two buttons">
-								<div class="ui basic green button">Refresh</div>
-							</div>
-						</div>
-					</div>
-				</div>
+			<div class="ui-grid">
+				{{>card}}
+			</div>
     <!-- If current user is not an admin show select number of reports-->
     {{else}}
     	<h1>Not Authorized</h1>
     {{/if}}
+</template>
+
+<template name="card">
+		{{#each objlist}}
+	<div class="ui fluid cards">
+			<div class="card">
+				<div class="content">
+						<h4> {{name}} </h4>
+					<div class="meta">
+					</div>
+					<div class="description">
+						{{value}}
+					</div>
+				</div>
+				<div class="extra content">
+					<div class="ui two buttons">
+						<div class="ui basic green button">Refresh</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		{{/each}}
 </template>
