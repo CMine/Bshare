@@ -14,6 +14,14 @@ FlowRouter.route('/dashboard', {
     }
 });
 
+// Profile Page
+FlowRouter.route('/profile', {
+    name: 'profile',
+    action() {
+        BlazeLayout.render("AppLayout", {main: "profile"});
+    }
+});
+
 //Admin Routes
 var adminRoutes = FlowRouter.group({
 	prefix: '/admin',

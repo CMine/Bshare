@@ -34,12 +34,9 @@ chart:chart
 aldeed:collection2
 reactive-dict
 
-#jul25
 harrison:papa-parse
-themeteorchef:bert
 reactive-var
 check
-fullcalendar:fullcalendar
 momentjs:moment
 rzymek:fullcalendar
 twbs:bootstrap
@@ -47,3 +44,4 @@ semantic:ui-card
 semantic:ui-button
 semantic:ui-icon
 semantic:ui-grid
+semantic:ui-form
