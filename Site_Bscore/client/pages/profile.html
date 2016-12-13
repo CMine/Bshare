@@ -6,13 +6,27 @@
       </div>
       <div class="eight wide column">
         {{>form}}
+        {{> Communities}}
       </div>
 
     </div>
     {{else}}
-    	<h1>Not Authorized</h1> 
+    	<h1>Not Authorized</h1>
       <p>You don't have an account. Try creating one to join in on the fun.</p>
     {{/if}}
+</Template>
+
+<Template name = "Communities">
+  <div class="ui toggle checkbox">
+    <ul>
+      <input type="checkbox" name="public">
+      <label>African American Community</label>
+    </ul>
+    <ul>
+      <input type="checkbox" name="public">
+      <label>Rural Community</label>
+    </ul>
+  </div>
 </Template>
 
 <Template name="user_card">
