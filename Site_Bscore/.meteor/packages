@@ -15,34 +15,31 @@ tracker                 # Meteor's client-side reactive programming library
 es5-shim                # ECMAScript 5 compatibility for older browsers.
 ecmascript              # Enable ECMAScript2015+ syntax in app code
 
+meteortoys:allthings    # In-app dev tools: Autopub, Authenticate, Throttle
+kadira:flow-router      # Client Side Router
+kadira:blaze-layout     # Layout manager designed for Blaze
 
-meteortoys:allthings
-kadira:flow-router
-kadira:blaze-layout
+fourseven:scss          # Sass build plugin for Meteor
+fortawesome:fontawesome # Fontawesome for Meteor (obsolete?)
+standard-minifier-css   # Minifier plugin used for Meteor
+standard-minifier-js    # Minifier plugin used for Meteor
 
-fourseven:scss
-fortawesome:fontawesome
-standard-minifier-css
-standard-minifier-js
+accounts-base           # Meteor's user account system
+accounts-password       # Meteor's password system
+useraccounts:unstyled   # Accounts Templates Unstyled
+raix:handlebar-helpers  # Handlebar extension helper
+alanning:roles          # Extends user account system with special roles
+chart:chart             # Wrapper for Chart.js
+aldeed:collection2      # Automatic validation of insert and update
+reactive-dict           # Reactive dictionary
 
-accounts-base
-accounts-password
-useraccounts:unstyled
-raix:handlebar-helpers
-alanning:roles
-chart:chart
-aldeed:collection2
-reactive-dict
-
-harrison:papa-parse
-reactive-var
-check
-momentjs:moment
-rzymek:fullcalendar
-twbs:bootstrap
-semantic:ui-card
-semantic:ui-button
-semantic:ui-icon
-semantic:ui-grid
-semantic:ui-form
-semantic:ui-dropdown
+reactive-var            # Reactive Variable
+check                   # Check if a value matches a pattern
+momentjs:moment         # Parse, Validate, and Manipulate dates
+twbs:bootstrap          # Bootstrap Wrapper
+semantic:ui-card        # Semantic UI Wrapper (Cards)
+semantic:ui-button      # Semantic UI Wrapper (Buttons)
+semantic:ui-icon        # Semantic UI Wrapper (Icons)
+semantic:ui-grid        # Semantic UI Wrapper (Grid)
+semantic:ui-form        # Semantic UI Wrapper (Forms)
+semantic:ui-dropdown    # Semantic UI Wrapper (Dropdown)
